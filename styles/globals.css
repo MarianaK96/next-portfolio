@@ -10,7 +10,13 @@ body {
 }
 
 :root {
+  --forest-green: #6b705c;
+  --brown-sugar: #be8160;
+  --camel: #fdd9af;
+  --off-white: #fffdfc;
+
   --plum: #9f9aa4;
+  --grey: #8d99ae;
   --plum-dark: #848188;
   --powder: #e7cfcd;
   --mint: #cfd8d7;

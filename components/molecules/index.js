@@ -1,3 +1,4 @@
-import Component from "./Component";
+import TakeALook from "./TakeALook";
+import AboutText from "./AboutText";
 
-export { Component };
+export { TakeALook, AboutText };

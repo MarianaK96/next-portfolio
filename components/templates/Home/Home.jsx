@@ -1,5 +1,14 @@
+import * as React from "react";
+import { About } from "components/organisms";
+import { LandingPage } from "components/organisms";
+
 const Home = () => {
-  return <h1>This is your homepage</h1>;
+  return (
+    <>
+      <LandingPage />
+      <About />
+    </>
+  );
 };
 
 export default Home;

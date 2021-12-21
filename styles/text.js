@@ -2,20 +2,22 @@ import { css } from "styled-components";
 import mediaQueries from "./mediaQueries";
 import { fontFamilyNames } from "./font";
 
-const { Poppins, Inter } = fontFamilyNames;
+const { Poppins, yesevaOne } = fontFamilyNames;
 
 const t1Base = {
   fontSize: "3.5rem",
-  lineHeight: "3.5rem",
-
+  // lineHeight: "2.25rem",
+  // letterSpacing: "0.025rem",
   mq: {
     atTablet: {
-      fontSize: "6rem",
-      lineHeight: "6.5rem",
+      fontSize: "4rem",
+      // lineHeight: "3rem",
+      // letterSpacing: "0.025rem",
     },
     atDesktop: {
-      fontSize: "7.5rem",
-      lineHeight: "7.5rem",
+      fontSize: "6rem",
+      // lineHeight: "4rem",
+      // letterSpacing: "0.03125rem",
     },
   },
 };
@@ -30,8 +32,9 @@ const t2 = {
       lineHeight: "4rem",
     },
     atDesktop: {
-      fontSize: "4rem",
+      fontSize: "3.5rem",
       lineHeight: "5rem",
+      letterSpacing: "0.03125rem",
     },
   },
 };
@@ -79,24 +82,24 @@ const bxsBase = {
 const standardTextStyles = {
   t1: {
     ...t1Base,
-    fontFamily: Poppins,
+    fontFamily: yesevaOne,
   },
   t2: {
     ...t2,
-    fontFamily: Poppins,
+    fontFamily: yesevaOne,
   },
   t3: {
     ...t3Base,
-    fontFamily: Inter,
+    fontFamily: Poppins,
   },
   bm: {
     ...bmBase,
-    fontFamily: Inter,
+    fontFamily: Poppins,
   },
 
   bxs: {
     ...bxsBase,
-    fontFamily: Inter,
+    fontFamily: Poppins,
   },
 };
 

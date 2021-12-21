@@ -1,3 +1,5 @@
-import Component from "./Component";
+import AboutSection from "./AboutSection";
+import About from "./About";
+import LandingPage from "./LandingPage";
 
-export { Component };
+export { AboutSection, About, LandingPage };

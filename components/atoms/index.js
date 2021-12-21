@@ -1,3 +1,3 @@
-import Component from "./Component";
+import TextAnimation from "./TextAnimation";
 
-export { Component };
+export { TextAnimation };

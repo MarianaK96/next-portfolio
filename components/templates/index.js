@@ -1,3 +1,4 @@
 import Home from "./Home";
+import ProjectSection from "./ProjectSection";
 
-export { Home };
+export { Home, ProjectSection };

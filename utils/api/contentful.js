@@ -34,15 +34,12 @@ const callContentful = async (query, variables = {}) => {
 
 export const getAllProjects = async () => {
   const query = `{
-            stonecatProjectCollection(limit: 10) {
+    portfolioProjectCollection(limit: 10) {
               items {
-                title,
-                image {
-                  description,
-                  url
-                },
-                linkTitle,
-                linkLocation
+                projectTitle,
+                projectInfo, 
+                projectSkills,
+
               }
             }
           }`;

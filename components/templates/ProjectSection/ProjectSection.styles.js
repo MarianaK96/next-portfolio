@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
-export const PageWrapper = styled.div`
-  background-color: #cfd8d7;
+export const Wrapper = styled.div`
+  grid-column: 2 / span 9;
+  grid-row: 3;
 `;
+
+export const PageWrapper = styled.div``;
 
 export const ProjectWrapper = styled.ul`
   display: flex;

@@ -1,4 +1,5 @@
 import { Wrapper, Name, Categories } from "./Header.styles.js";
+import { GridLayout } from "common_components/atoms";
 import { Navigation } from "common_components/molecules";
 
 const Header = () => {

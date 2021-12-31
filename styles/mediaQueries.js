@@ -2,7 +2,7 @@ import { css } from "styled-components";
 
 const standardMediaQueries = {
   atTablet: 768,
-  atDesktop: 1024,
+  atDesktop: 1100,
   atWidescreen: 1920,
 };
 

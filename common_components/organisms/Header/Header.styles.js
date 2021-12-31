@@ -3,9 +3,13 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   margin-top: 1.5rem;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   position: fixed;
   width: 100%;
+
+  ${({ theme }) => theme.mq.atDesktop`
+  grid-template-columns: repeat(12, 1fr);
+  `}
 `;
 
 export const Name = styled.h1`
@@ -16,5 +20,9 @@ export const Name = styled.h1`
 `;
 
 export const Categories = styled.div`
-  grid-column: 9 / span 2;
+  grid-column: 6 / span 3;
+
+  ${({ theme }) => theme.mq.atDesktop`
+  grid-column: 10 / span 2;
+  `}
 `;

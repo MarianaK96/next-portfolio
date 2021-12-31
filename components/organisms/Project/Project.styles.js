@@ -1,69 +1,30 @@
+import Link from "next/link";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const LinkWrapper = styled.a`
-  text-decoration: none;
-`
+export const Wrapper = styled(motion.div)`
+  grid-column: 2 / span 6;
+  grid-row: 2 / -1;
 
-export const Wrapper = styled.li`
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  & > .image {
-    display: inline-block;
-    width: 100%;
-    height: 500px;
-  }
-`
-
-export const Image = styled.div`
-  background-image: ${({background}) => `url(${background})`};
-  background-position: center;
-  background-size: cover;
-`
-
-export const TextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-top: .75rem;
+  display: inline-block;
+  overflow: hidden;
 
   ${({ theme }) => theme.mq.atDesktop`
-    flex-direction: row;
-    justify-content: space-between;
+  grid-row: 3 / -1;
+  `}
+`;
 
-  `} 
-
-  & > figcaption {
-    ${({theme}) => theme.text.t2}
-    color: var(--plum-dark);
-    font-weight: 600;
-    text-align: center;
-    margin-top: .5rem;
-
-    ${({ theme }) => theme.mq.atDesktop`
-    text-align: end;
-    white-space: nowrap;
-    margin-top: 0;
-
-  `} 
+export const ArrowWrapper = styled(Link)`
+  & > svg {
+    cursor: pointer;
   }
+`;
 
-  & > a {
-    ${({theme}) => theme.text.bm}
-    color: var(--plum-dark);
-    text-decoration: underline;
-    margin-top: 1.75rem;
-    
-    ${({ theme }) => theme.mq.atDesktop`
-      text-align: end;
-      white-space: nowrap;
-      margin-top: 0;
+export const ProjectWrapper = styled(motion.div)`
+  display: inline-block;
+`;
 
-    `} 
-  }
-
-
-`
+export const SkillsWrapper = styled(motion.div)``;
+export const TitleWrapper = styled(motion.div)``;
+export const InfoWrapper = styled(motion.div)``;
+export const ArrowAnim = styled(motion.div)``;

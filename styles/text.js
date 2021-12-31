@@ -15,7 +15,7 @@ const t1Base = {
       // letterSpacing: "0.025rem",
     },
     atDesktop: {
-      fontSize: "6rem",
+      fontSize: "5rem",
       // lineHeight: "4rem",
       // letterSpacing: "0.03125rem",
     },
@@ -23,17 +23,18 @@ const t1Base = {
 };
 
 const t2 = {
-  fontSize: "2.5rem",
-  lineHeight: "3.5rem",
+  fontSize: "1.8rem",
+  lineHeight: "2.7rem",
+  letterSpacing: "0.03rem",
 
   mq: {
     atTablet: {
-      fontSize: "3rem",
-      lineHeight: "4rem",
+      fontSize: "2.5rem",
+      lineHeight: "3.8rem",
     },
     atDesktop: {
-      fontSize: "3.5rem",
-      lineHeight: "5rem",
+      fontSize: "2.9rem",
+      lineHeight: "4rem",
       letterSpacing: "0.03125rem",
     },
   },
@@ -56,7 +57,7 @@ const t3Base = {
 };
 
 const bmBase = {
-  fontSize: "1.25rem",
+  fontSize: "1rem",
   mq: {
     atTablet: {
       fontSize: "1.25rem",
@@ -90,7 +91,7 @@ const standardTextStyles = {
   },
   t3: {
     ...t3Base,
-    fontFamily: Poppins,
+    fontFamily: yesevaOne,
   },
   bm: {
     ...bmBase,

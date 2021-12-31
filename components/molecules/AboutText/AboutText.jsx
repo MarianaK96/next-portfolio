@@ -3,20 +3,12 @@ import { Wrapper, Sentence, SentenceContainer } from "./AboutText.styles.js";
 import { motion } from "framer-motion";
 
 const AboutText = () => {
-  const [test, setTest] = useState("hidden");
-
-  useEffect(() => {
-    console.log("test: ", test);
-  }, [test]);
-
   const lineOne = "Hey, I'm Mariana, a";
   const lineTwo = " front-end developer";
   const lineThree = "with extended proficiency in devops";
   const lineFour = "and a background in";
   const space = " ";
   const lineFive = " network engineering";
-
-  const sentences = [lineOne, lineTwo, lineThree, lineFour, lineFive];
 
   const parentVariant = {
     hidden: { opacity: 1 },
@@ -35,11 +27,17 @@ const AboutText = () => {
     visible: {
       translateY: 0,
       opacity: 1,
-    },
-    transition: {
-      ease: "ease",
+      transition: {
+        ease: [0.69, 0.71, 0.5, 0.51],
+      },
     },
   };
+
+  const [test, setTest] = useState("hidden");
+
+  useEffect(() => {
+    console.log("test: ", test);
+  }, [test]);
 
   return (
     <>
@@ -56,9 +54,6 @@ const AboutText = () => {
         animate="visible"
         variants={parentVariant}
       >
-        {/* {sentences.map((item, index) => {
-          return <Sentence variants={letter}>{item}</Sentence>;
-        })} */}
         <SentenceContainer>
           <Sentence variants={letter} as={motion.div}>
             {lineOne} <span>{lineTwo}</span>

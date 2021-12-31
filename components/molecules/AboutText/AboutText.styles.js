@@ -3,11 +3,14 @@ import { motion } from "framer-motion";
 
 export const Wrapper = styled.div`
   ${({ theme }) => theme.text.t2}
-  color: var(--brown-sugar);
+  color: var(--grey);
   font-weight: bold;
   overflow: hidden;
-  width: auto;
+  width: 80%;
   height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 0;
 
   & div {
     display: inline-block;
@@ -18,10 +21,9 @@ export const Wrapper = styled.div`
     display: inline-block;
   }
 
-  & .highlight {
-    color: var(--powder);
-    display: inline-block;
-  }
+  ${({ theme }) => theme.mq.atTablet`
+  width: auto;
+  `}
 `;
 
 export const SentenceContainer = styled(motion.p)`
@@ -32,6 +34,6 @@ export const Sentence = styled(motion.div)`
   display: inline-block;
 
   & > span {
-    color: var(--forest-green);
+    color: var(--crimson);
   }
 `;

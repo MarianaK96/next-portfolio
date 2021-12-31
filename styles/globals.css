@@ -3,6 +3,7 @@
 
 body {
   margin: 0;
+  background-color: var(--offWhite);
 }
 
 * {
@@ -10,18 +11,19 @@ body {
 }
 
 :root {
-  --forest-green: #6b705c;
-  --brown-sugar: #be8160;
-  --camel: #fdd9af;
-  --off-white: #fffdfc;
+  --offWhite: #edf2f4;
+  --darkNavy: #2f0a85;
+  --navy: #3a0ca3;
+  --darkCrimson: #d90429;
+  --crimson: #ef233c;
 
-  --plum: #9f9aa4;
   --grey: #8d99ae;
-  --plum-dark: #848188;
-  --powder: #e7cfcd;
-  --mint: #cfd8d7;
-  --lime: #b5c9c3;
-  --lime-dark: #455755;
-  --lipstick: #cab1bd;
-  --lipstick-dark: #a88886;
+  --greyOpaque: rgba(141, 153, 174, 0.15);
+  --offBlack: #2b2d42;
+
+  --gradientOne: linear-gradient(
+    177deg,
+    rgba(186, 106, 99, 1) 0%,
+    rgba(162, 149, 169, 1) 100%
+  );
 }

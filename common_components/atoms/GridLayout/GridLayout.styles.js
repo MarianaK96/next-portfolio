@@ -7,7 +7,7 @@ export const GridWrapper = styled.div`
   width: 100%;
   height: 100vh;
 
-  ${({ theme }) => theme.mq.atTablet`
+  ${({ theme }) => theme.mq.atDesktop`
     grid-template-columns: repeat(12, 1fr);
   `}
 `;

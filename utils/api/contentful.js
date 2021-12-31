@@ -34,17 +34,17 @@ const callContentful = async (query, variables = {}) => {
 
 export const getAllProjects = async () => {
   const query = `{
-    portfolioProjectCollection(limit: 10) {
-              items {
-                projectTitle,
-                projectInfo, 
-                projectSkills,
+    portfolioProjectCollection {
+      items {
+        slug,
+        projectTitle, 
+        projectInfo, 
+        projectSkills
 
-              }
-            }
-          }`;
+      }
+  }
+}`;
 
   const response = await callContentful(query);
-
   return response.data;
 };

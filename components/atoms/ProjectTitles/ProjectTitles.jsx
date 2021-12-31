@@ -1,9 +1,9 @@
-import { TitleWrapper, Title, Wrapper } from "./ProjectTitles.styles";
+import { TitleWrapper, Title, Test } from "./ProjectTitles.styles";
 
-const ProjectTitles = ({ title }) => {
+const ProjectTitles = ({ title, slug }) => {
   return (
     <>
-      <TitleWrapper>
+      <TitleWrapper href={slug}>
         <Title>{title}</Title>
       </TitleWrapper>
     </>

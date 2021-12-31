@@ -1,11 +1,16 @@
-import { Styles } from "./Navigation.styles";
+import Link from "next/link";
+import { Styles, UnderlineWrapper, Wrapper } from "./Navigation.styles";
 
 const Navigation = () => {
   return (
     <>
       <Styles>
-        <a href="">about</a>
-        <a href="">work</a>
+        <UnderlineWrapper>
+          <Link href="/home">about</Link>
+        </UnderlineWrapper>
+        <UnderlineWrapper>
+          <Link href="/projects">work</Link>
+        </UnderlineWrapper>
       </Styles>
     </>
   );

@@ -1,9 +1,19 @@
-import { ProjectSection } from "components/templates";
+import { ProjectList } from "components/templates";
+import { getAllProjects } from "utils/api/contentful";
 
-const Projects = () => {
+export const getStaticProps = async () => {
+  const res = await getAllProjects();
+  const data = res.portfolioProjectCollection?.items;
+
+  return {
+    props: { projects: data },
+  };
+};
+
+const Projects = ({ projects }) => {
   return (
     <>
-      <ProjectSection />
+      <ProjectList projects={projects} />
     </>
   );
 };

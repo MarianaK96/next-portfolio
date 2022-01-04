@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-export const Title = styled(motion.h1)`
+export const Title = styled.h1`
   ${({ theme }) => theme.text.t2}
   color: var(--navy);
   cursor: pointer;

@@ -24,6 +24,19 @@ export const ProjectWrapper = styled(motion.div)`
   display: inline-block;
 `;
 
+export const Title = styled.div`
+  & > h1 {
+    ${({ theme }) => theme.text.t2}
+    color: var(--navy);
+    cursor: pointer;
+    margin: 0;
+  }
+  height: auto;
+
+  grid-column: 2;
+  grid-row: 4 / 6;
+`;
+
 export const SkillsWrapper = styled(motion.div)``;
 export const TitleWrapper = styled(motion.div)``;
 export const InfoWrapper = styled(motion.div)``;

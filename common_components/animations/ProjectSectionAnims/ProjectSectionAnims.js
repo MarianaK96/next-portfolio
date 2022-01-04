@@ -5,8 +5,8 @@ const ProjectSectionAnims = {
       opacity: 1,
       scale: 1,
       transition: {
-        delay: 0.4,
-        staggerChildren: 0.4,
+        delay: 3,
+        staggerChildren: 0.1,
       },
     },
   },
@@ -17,7 +17,7 @@ const ProjectSectionAnims = {
       opacity: 1,
     },
     transition: {
-      ease: "ease",
+      ease: "easeIn",
     },
   },
   arrowAnim: {
@@ -27,7 +27,7 @@ const ProjectSectionAnims = {
       opacity: 1,
     },
     transition: {
-      ease: "ease",
+      ease: "easeIn",
     },
   },
   introductionAnim: {
@@ -37,7 +37,7 @@ const ProjectSectionAnims = {
       opacity: 1,
     },
     transition: {
-      ease: "ease",
+      ease: "easeIn",
     },
   },
   skillsHeadingAnim: {
@@ -47,7 +47,7 @@ const ProjectSectionAnims = {
       opacity: 1,
     },
     transition: {
-      ease: "ease",
+      ease: "easeIn",
     },
   },
   skillsSectionAnim: {
@@ -57,7 +57,7 @@ const ProjectSectionAnims = {
       opacity: 1,
     },
     transition: {
-      ease: "ease",
+      ease: "easeIn",
     },
   },
 };

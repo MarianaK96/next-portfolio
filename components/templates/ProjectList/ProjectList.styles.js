@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export const Wrapper = styled(motion.div)`
   grid-column: 2 / 9;
@@ -11,4 +12,17 @@ export const Wrapper = styled(motion.div)`
   `}
 `;
 
-export const TitleWrapper = styled(motion.div)``;
+export const Container = styled.div`
+  margin-right: 5rem;
+
+  & > h1 {
+    ${({ theme }) => theme.text.t2}
+    color: var(--grey);
+    cursor: pointer;
+    margin: 0;
+
+    &:hover {
+      color: var(--crimson);
+    }
+  }
+`;

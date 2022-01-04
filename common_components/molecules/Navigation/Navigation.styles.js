@@ -9,7 +9,6 @@ export const Styles = styled.div`
   ${({ theme }) => theme.text.bm}
   cursor: pointer;
   margin-right: 1.5rem;
-  text-transform: uppercase;
   font-weight: 500;
   color: var(--offBlack);
 `;

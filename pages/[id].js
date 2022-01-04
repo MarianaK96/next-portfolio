@@ -2,6 +2,7 @@ import { Project } from "components/organisms";
 
 import { getProject } from "utils/api/getProject";
 import { getAllProjects } from "utils/api/contentful";
+import { useEffect } from "react";
 
 export const getStaticPaths = async () => {
   const res = await getAllProjects();
@@ -31,6 +32,9 @@ export const getStaticProps = async (context) => {
 };
 
 const Works = ({ project }) => {
+  useEffect(() => {
+    console.log(project);
+  });
   return (
     <>
       <Project project={project} />

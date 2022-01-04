@@ -17,6 +17,8 @@ import {
   InfoWrapper,
   ArrowAnim,
   Title,
+  LinkWrapper,
+  Container,
 } from "./Project.styles";
 import { ProjectSectionAnims } from "common_components/animations";
 import { AnimateTextIn } from "common_components/animations";
@@ -56,7 +58,18 @@ const Project = ({ project }) => {
           {project.map((project) => {
             return (
               <>
-                <ProjectTitle title={project.projectTitle} />
+                <Container>
+                  <ProjectTitle title={project.projectTitle} />
+
+                  <LinkWrapper
+                    href={project.projectLink}
+                    target={"blank"}
+                    rel="nofollow"
+                  >
+                    Visit site
+                  </LinkWrapper>
+                </Container>
+
                 <ProjectInfo info={project.projectInfo} />
                 <ProjectSkills skills={project.projectSkills} />
 

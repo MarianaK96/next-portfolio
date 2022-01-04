@@ -44,7 +44,8 @@ export const getProject = async (id) => {
           slug,
           projectTitle, 
           projectInfo, 
-          projectSkills
+          projectSkills,
+          projectLink
   
         }
     }

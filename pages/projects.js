@@ -1,4 +1,5 @@
 import { ProjectList } from "components/templates";
+import { useEffect } from "react";
 import { getAllProjects } from "utils/api/contentful";
 
 export const getStaticProps = async () => {

@@ -39,8 +39,8 @@ export const getAllProjects = async () => {
         slug,
         projectTitle, 
         projectInfo, 
-        projectSkills
-
+        projectSkills,
+        projectLink,
       }
   }
 }`;

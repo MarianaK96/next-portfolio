@@ -14,6 +14,10 @@ export const Wrapper = styled(motion.div)`
   `}
 `;
 
+export const Container = styled.div`
+  display: flex;
+`;
+
 export const ArrowWrapper = styled(Link)`
   & > svg {
     cursor: pointer;
@@ -35,6 +39,18 @@ export const Title = styled.div`
 
   grid-column: 2;
   grid-row: 4 / 6;
+`;
+export const LinkWrapper = styled.a`
+  align-self: center;
+  margin-top: 0.5rem;
+  ${({ theme }) => theme.text.bm}
+  color: var(--navy);
+  display: inline-block;
+  margin-left: 0;
+  text-align: left;
+  ${({ theme }) => theme.mq.atTablet`
+    margin-left: 60px;
+`}
 `;
 
 export const SkillsWrapper = styled(motion.div)``;

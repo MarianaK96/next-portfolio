@@ -11,9 +11,9 @@ import { AnimateTextIn } from "common_components/animations";
 const AboutText = () => {
   const lineOne = "Hey, I'm Mariana, a";
   const lineTwo = "front-end developer";
-  const lineThree = "with extended proficiency in devops";
+  const lineThree = "with experience in Javascript";
   const lineFour = "and a background in";
-  const lineFive = "network engineering";
+  const lineFive = "user research";
 
   return (
     <>

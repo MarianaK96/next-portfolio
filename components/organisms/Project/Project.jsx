@@ -5,6 +5,7 @@ import {
   ProjectInfo,
   ProjectSkills,
   ArrowBack,
+  ArrowFront,
 } from "common_components/atoms";
 import { Header } from "common_components/organisms";
 import {
@@ -15,8 +16,10 @@ import {
   TitleWrapper,
   InfoWrapper,
   ArrowAnim,
+  Title,
 } from "./Project.styles";
 import { ProjectSectionAnims } from "common_components/animations";
+import { AnimateTextIn } from "common_components/animations";
 
 const Project = ({ project }) => {
   const {
@@ -53,9 +56,13 @@ const Project = ({ project }) => {
           {project.map((project) => {
             return (
               <>
-                <TitleWrapper variants={headingAnim}>
-                  <ProjectTitle title={project.projectTitle} />
-                </TitleWrapper>
+                <ProjectTitle title={project.projectTitle} />
+                <ProjectInfo info={project.projectInfo} />
+                <ProjectSkills skills={project.projectSkills} />
+
+                {/* <Title>
+                  <AnimateTextIn title={project.projectTitle} />
+                </Title>
 
                 <InfoWrapper variants={introductionAnim}>
                   <ProjectInfo info={project.projectInfo} />
@@ -67,14 +74,19 @@ const Project = ({ project }) => {
                     variants={skillsSectionAnim}
                   />
                 </SkillsWrapper>
+              </> */}
               </>
             );
           })}
-          <ArrowAnim variants={arrowAnim}>
+          <ArrowWrapper href="/projects">
+            <ArrowFront rotation={`180`} />
+          </ArrowWrapper>
+
+          {/* <ArrowAnim variants={arrowAnim}>
             <ArrowWrapper href="/projects">
-              <ArrowBack />
+              <ArrowFront rotation={`180`} />
             </ArrowWrapper>
-          </ArrowAnim>
+          </ArrowAnim> */}
         </Wrapper>
       </GridLayout>
     </>

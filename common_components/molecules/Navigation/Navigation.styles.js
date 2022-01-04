@@ -27,7 +27,7 @@ export const UnderlineWrapper = styled.div`
     right: 0;
     width: 0;
     height: 3px;
-    transition: width 0.4s cubic-bezier(0.69, 0.71, 0.5, 0.51);
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
     background-color: black;
   }
 

@@ -1,8 +1,10 @@
 import { Header } from "common_components/organisms";
-import { GridLayout } from "common_components/atoms";
+import { GridLayout, ProjectTitle } from "common_components/atoms";
 import { ProjectTitles } from "components/atoms";
-import { Wrapper, TitleWrapper } from "./ProjectList.styles";
+import { Wrapper, TitleWrapper, Container } from "./ProjectList.styles";
 import { ProjectListAnims } from "common_components/animations";
+import { AnimateTextIn } from "common_components/animations";
+import Link from "next/link";
 
 const ProjectList = ({ projects }) => {
   const { projectList, projectTitle } = ProjectListAnims;
@@ -10,17 +12,18 @@ const ProjectList = ({ projects }) => {
     <>
       <Header />
       <GridLayout>
-        <Wrapper variants={projectList} initial="hidden" animate="visible">
+        <Wrapper>
           {projects &&
             projects.map((project) => {
               return (
-                <TitleWrapper variants={projectTitle}>
-                  <ProjectTitles
-                    title={project.projectTitle}
-                    key={project.slug}
-                    slug={"/" + project.slug}
-                  />
-                </TitleWrapper>
+                <Link href={"/" + project.slug}>
+                  <Container key={project.slug}>
+                    <AnimateTextIn
+                      title={project.projectTitle}
+                      color={`var(--grey)`}
+                    />
+                  </Container>
+                </Link>
               );
             })}
         </Wrapper>

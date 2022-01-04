@@ -5,7 +5,7 @@ const ProjectListAnims = {
       opacity: 1,
       scale: 1,
       transition: {
-        delay: 0.4,
+        delay: 0.2,
         staggerChildren: 0.2,
       },
     },
@@ -17,7 +17,7 @@ const ProjectListAnims = {
       opacity: 1,
     },
     transition: {
-      ease: "ease",
+      ease: [0.69, 0.71, 0.5, 0.51],
     },
   },
 };

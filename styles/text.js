@@ -34,7 +34,7 @@ const t2 = {
     },
     atDesktop: {
       fontSize: "2.9rem",
-      lineHeight: "4rem",
+      lineHeight: "5rem",
       letterSpacing: "0.03125rem",
     },
   },

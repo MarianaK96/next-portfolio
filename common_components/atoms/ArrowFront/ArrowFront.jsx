@@ -1,22 +1,26 @@
 import * as React from "react";
+import { Wrapper } from "./ArrowFront.styles";
 
-export const ArrowFront = (props) => {
+export const ArrowFront = ({ rotation }) => {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={50}
-      height={50}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="var(--offBlack)"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="feather feather-arrow-right"
-      {...props}
-    >
-      <path d="M5 12h14M12 5l7 7-7 7" />
-    </svg>
+    <Wrapper>
+      <svg
+        width={44}
+        height={16}
+        viewBox="0 0 44 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        style={{ transform: `rotate(${rotation}deg)` }}
+      >
+        <path
+          d="M1 8h42M36 1l7 7-7 7"
+          stroke="var(--offBlack)"
+          strokeWidth={3}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    </Wrapper>
   );
 };
 

@@ -23,7 +23,7 @@ export const UnderlineWrapper = styled.div`
     content: "";
     position: absolute;
     z-index: -1;
-    bottom: 40%;
+    bottom: 0;
     right: 0;
     width: 0;
     height: 3px;

@@ -1,77 +1,31 @@
 import React, { useState, useEffect } from "react";
-import { Wrapper, Sentence, SentenceContainer } from "./AboutText.styles.js";
+import {
+  Wrapper,
+  Sentence,
+  SentenceContainer,
+  Styles,
+} from "./AboutText.styles.js";
 import { motion } from "framer-motion";
+import { AnimateTextIn } from "common_components/animations";
 
 const AboutText = () => {
   const lineOne = "Hey, I'm Mariana, a";
-  const lineTwo = " front-end developer";
+  const lineTwo = "front-end developer";
   const lineThree = "with extended proficiency in devops";
   const lineFour = "and a background in";
-  const space = " ";
-  const lineFive = " network engineering";
-
-  const parentVariant = {
-    hidden: { opacity: 1 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delay: 0.4,
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const letter = {
-    hidden: { translateY: 200, opacity: 0 },
-    visible: {
-      translateY: 0,
-      opacity: 1,
-      transition: {
-        ease: [0.69, 0.71, 0.5, 0.51],
-      },
-    },
-  };
-
-  const [test, setTest] = useState("hidden");
-
-  useEffect(() => {
-    console.log("test: ", test);
-  }, [test]);
+  const lineFive = "network engineering";
 
   return (
     <>
-      {/* <button
-        onClick={() => {
-          test === "hidden" ? setTest("visible") : setTest("hidden");
-        }}
-      >
-        set test
-      </button> */}
-      <Wrapper
-        as={motion.div}
-        initial="hidden"
-        animate="visible"
-        variants={parentVariant}
-      >
-        <SentenceContainer>
-          <Sentence variants={letter} as={motion.div}>
-            {lineOne} <span>{lineTwo}</span>
-          </Sentence>
-          <Sentence variants={letter} as={motion.div}>
-            {lineThree}
-          </Sentence>
-          <Sentence variants={letter} as={motion.div}>
-            {lineFour} <span>{lineFive}</span>
-          </Sentence>
-        </SentenceContainer>
-      </Wrapper>
+      <Styles>
+        <AnimateTextIn title={lineOne} color={`var(--grey)`} />
+        <AnimateTextIn title={lineTwo} color={`var(--crimson)`} />
+        <AnimateTextIn title={lineThree} color={`var(--grey)`} />
+        <AnimateTextIn title={lineFour} color={`var(--grey)`} />
+        <AnimateTextIn title={lineFive} color={`var(--crimson)`} />
+      </Styles>
     </>
   );
 };
 
 export default AboutText;
-
-//parent variant for the wrapper
-//child variant for the lines
-//visible y transform

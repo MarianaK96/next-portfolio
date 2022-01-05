@@ -4,8 +4,7 @@ import {
   ProjectTitle,
   ProjectInfo,
   ProjectSkills,
-  ArrowBack,
-  ArrowFront,
+  Arrow,
 } from "common_components/atoms";
 import { Header } from "common_components/organisms";
 import {
@@ -20,8 +19,8 @@ import {
   LinkWrapper,
   Container,
 } from "./Project.styles";
-import { ProjectSectionAnims } from "common_components/animations";
-import { AnimateTextIn } from "common_components/animations";
+import { ProjectSectionAnims } from "animations";
+import { AnimateTextIn } from "animations";
 
 const Project = ({ project }) => {
   const {
@@ -50,17 +49,12 @@ const Project = ({ project }) => {
       </button> */}
       <Header />
       <GridLayout>
-        <Wrapper
-          variants={projectSectionAnim}
-          initial="hidden"
-          animate="visible"
-        >
+        <Wrapper>
           {project.map((project) => {
             return (
               <>
                 <Container>
                   <ProjectTitle title={project.projectTitle} />
-
                   <LinkWrapper
                     href={project.projectLink}
                     target={"blank"}
@@ -69,11 +63,24 @@ const Project = ({ project }) => {
                     Visit site
                   </LinkWrapper>
                 </Container>
-
                 <ProjectInfo info={project.projectInfo} />
                 <ProjectSkills skills={project.projectSkills} />
+              </>
+            );
+          })}
+          <ArrowWrapper href="/projects">
+            <Arrow rotation={`180`} />
+          </ArrowWrapper>
+        </Wrapper>
+      </GridLayout>
+    </>
+  );
+};
 
-                {/* <Title>
+export default Project;
+
+{
+  /* <Title>
                   <AnimateTextIn title={project.projectTitle} />
                 </Title>
 
@@ -87,23 +94,13 @@ const Project = ({ project }) => {
                     variants={skillsSectionAnim}
                   />
                 </SkillsWrapper>
-              </> */}
-              </>
-            );
-          })}
-          <ArrowWrapper href="/projects">
-            <ArrowFront rotation={`180`} />
-          </ArrowWrapper>
+              </> */
+}
 
-          {/* <ArrowAnim variants={arrowAnim}>
+{
+  /* <ArrowAnim variants={arrowAnim}>
             <ArrowWrapper href="/projects">
               <ArrowFront rotation={`180`} />
             </ArrowWrapper>
-          </ArrowAnim> */}
-        </Wrapper>
-      </GridLayout>
-    </>
-  );
-};
-
-export default Project;
+          </ArrowAnim> */
+}

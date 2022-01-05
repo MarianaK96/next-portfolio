@@ -5,10 +5,10 @@ export const Styles = styled.div`
   display: flex;
   justify-content: space-around;
   width: auto;
+  margin-right: 1.5rem;
 
   ${({ theme }) => theme.text.bm}
   cursor: pointer;
-  margin-right: 1.5rem;
   font-weight: 500;
   color: var(--offBlack);
 `;
@@ -18,6 +18,7 @@ export const UnderlineWrapper = styled.div`
   width: auto;
   z-index: 1;
   display: inline-block;
+
   &:after {
     content: "";
     position: absolute;

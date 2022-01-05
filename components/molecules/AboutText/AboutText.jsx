@@ -6,7 +6,7 @@ import {
   Styles,
 } from "./AboutText.styles.js";
 import { motion } from "framer-motion";
-import { AnimateTextIn } from "common_components/animations";
+import { AnimateTextIn } from "animations";
 
 const AboutText = () => {
   const lineOne = "Hey, I'm Mariana, a";

@@ -1,29 +1,41 @@
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 import { Wrapper, ArrowWrapper, Animate } from "./TakeALook.styles.js";
-import { ArrowFront } from "common_components/atoms";
-import { AnimateTextIn } from "common_components/animations";
+import { Arrow } from "common_components/atoms";
+import { AnimateTextIn } from "animations";
 
 const TakeALook = () => {
   const variant = {
     visible: { x: 0, opacity: 1 },
-    hidden: { x: -700, opacity: 0 },
+    hidden: { x: -200, opacity: 0 },
     transition: {
-      ease: "easeIn",
-      duration: 5,
+      ease: "easeInOut",
+      delay: 3,
+      duration: 3,
     },
   };
   const [test, setTest] = useState("hidden");
   return (
     <Wrapper>
-      <AnimateTextIn title={`Take a look`} color={`var(--grey)`} />
+      <button
+        onClick={() => {
+          test === "hidden" ? setTest("visible") : setTest("hidden");
+        }}
+      >
+        set test
+      </button>
+      <Link href="/projects">
+        <AnimateTextIn title={`Take a look`} color={`var(--grey)`} />
+      </Link>
+
       <ArrowWrapper href="/projects">
         <Animate
           initial="hidden"
-          animate="visible"
+          animate={test}
           variants={variant}
           transition="transition"
         >
-          <ArrowFront />
+          <Arrow />
         </Animate>
       </ArrowWrapper>
     </Wrapper>

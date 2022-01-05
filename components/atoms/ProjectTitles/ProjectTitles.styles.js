@@ -4,11 +4,11 @@ import styled from "styled-components";
 export const TitleWrapper = styled(Link)`
   display: inline-block;
   margin-right: 5rem;
+  margin: 0;
 
   ${({ theme }) => theme.text.t2}
   color: var(--grey);
   cursor: pointer;
-  margin: 0;
 
   &:hover {
     color: var(--crimson);
@@ -16,10 +16,11 @@ export const TitleWrapper = styled(Link)`
 `;
 
 export const Title = styled.h1`
+  margin: 0;
+
   ${({ theme }) => theme.text.t2}
   color: var(--grey);
   cursor: pointer;
-  margin: 0;
 
   &:hover {
     color: var(--crimson);

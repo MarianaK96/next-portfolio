@@ -13,11 +13,12 @@ export const Wrapper = styled.div`
 
 export const AboutWrapper = styled.div`
   grid-column: 1 / span 8;
-  display: flex;
   height: 100%;
+  margin-top: 3rem;
+
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
   flex-direction: column;
 
   ${({ theme }) => theme.mq.atTablet`
@@ -27,14 +28,15 @@ export const AboutWrapper = styled.div`
   `}
 
   ${({ theme }) => theme.mq.atDesktop`
-  grid-column: 2 / 13;
-  margin-top: 10rem;
-  align-items: flex-start;
+    grid-column: 2 / 13;
+    margin-top: 10rem;
+    align-items: flex-start;
 `}
 `;
 
 export const LookWrapper = styled.div`
   grid-column: 2 / span 4;
+
   ${({ theme }) => theme.mq.atTablet`
     margin-top: 5rem;
     margin-bottom: 4rem;

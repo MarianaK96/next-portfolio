@@ -4,9 +4,10 @@ export const FooterContainer = styled.footer`
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: #8d99ae;
   padding-bottom: 1rem;
   padding-top: 1rem;
+
+  background-color: #8d99ae;
 `;
 
 export const Wrapper = styled.div`
@@ -14,9 +15,10 @@ export const Wrapper = styled.div`
 `;
 
 export const TextWrapper = styled.div`
+  margin: 0 auto;
+
   ${({ theme }) => theme.text.bxs}
   color: white;
-  margin: 0 auto;
 `;
 
 export const IconsWrapper = styled.span`

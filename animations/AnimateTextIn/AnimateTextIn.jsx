@@ -45,9 +45,8 @@ const AnimateTextIn = ({ title, color }) => {
       <div ref={ref}></div>
       <TitleStyles
         color={color}
-        as={motion.h1}
         initial="hidden"
-        animate={test}
+        animate="visible"
         variants={parentVariant}
       >
         {title.split(" ").map((word, index) => (

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-export const TitleStyles = styled.h1`
+export const TitleStyles = styled(motion.h1)`
   margin: 0;
   color: ${({ color }) => color};
   overflow: hidden;

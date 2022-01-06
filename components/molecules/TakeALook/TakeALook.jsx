@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import {
   Wrapper,
@@ -12,37 +11,11 @@ import { AnimateTextIn } from "animations";
 import { motion } from "framer-motion";
 
 const TakeALook = () => {
-  const [test, setTest] = useState("hidden");
-
-  // const parentVariant = {
-  //   hidden: { opacity: 1 },
-  //   visible: {
-  //     opacity: 1,
-  //     scale: 1,
-  //     transition: {
-  //       delayChildren: 3,
-  //       staggerChildren: 3,
-  //     },
-  //   },
-  // };
-
-  // const childVariant = {
-  //   hidden: { opacity: 0 },
-  //   visible: {
-  //     opacity: 1,
-  //   },
-  // };
+  return (
+    <Wrapper>
 
   return (
     <Wrapper>
-      {/* <button
-        onClick={() => {
-          test === "hidden" ? setTest("visible") : setTest("hidden");
-        }}
-      >
-        set test
-      </button> */}
-
       <Link href="/projects">
         <TextWrapper>
           <AnimateTextIn title={`Take a look`} color={`var(--grey)`} />

@@ -1,11 +1,14 @@
-import { Wrapper, Name, Categories } from "./Header.styles.js";
+import { Wrapper, Name, Categories, LinkStyle } from "./Header.styles.js";
 import { GridLayout } from "common_components/atoms";
 import { Navigation } from "common_components/molecules";
+import Link from "next/link";
 
 const Header = () => {
   return (
     <Wrapper>
-      <Name>Mariana Koudela</Name>
+      <Link href="/home">
+        <LinkStyle>Mariana Koudela</LinkStyle>
+      </Link>
       <Categories>
         <Navigation />
       </Categories>

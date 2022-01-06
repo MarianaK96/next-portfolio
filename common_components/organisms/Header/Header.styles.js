@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
@@ -12,12 +13,14 @@ export const Wrapper = styled.div`
   `}
 `;
 
-export const Name = styled.h1`
+export const LinkStyle = styled.a`
   grid-column: 2 / span 3;
   margin: 0;
-
-  ${({ theme }) => theme.text.bm}
+  cursor: pointer;
+  ${({ theme }) => theme.text.bm};
+  font-weight: bold;
   color: black;
+  text-decoration: none;
 `;
 
 export const Categories = styled.div`

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { LandingPage } from "components/organisms";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <>
       <LandingPage />
@@ -9,4 +9,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

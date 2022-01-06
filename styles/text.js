@@ -85,7 +85,7 @@ const standardTextStyles = {
   },
   t3: {
     ...t3Base,
-    fontFamily: yesevaOne,
+    fontFamily: Poppins,
   },
   bm: {
     ...bmBase,

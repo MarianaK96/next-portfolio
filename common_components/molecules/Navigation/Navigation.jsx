@@ -6,7 +6,7 @@ const Navigation = () => {
     <>
       <Styles>
         <UnderlineWrapper>
-          <Link href="/home">about</Link>
+          <Link href="/">about</Link>
         </UnderlineWrapper>
         <UnderlineWrapper>
           <Link href="/projects">work</Link>

@@ -6,7 +6,7 @@ import Link from "next/link";
 const Header = () => {
   return (
     <Wrapper>
-      <Link href="/home">
+      <Link href="/">
         <LinkStyle>Mariana Koudela</LinkStyle>
       </Link>
       <Categories>

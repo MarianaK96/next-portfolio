@@ -35,3 +35,20 @@ export const Sentence = styled(motion.div)`
     color: var(--crimson);
   }
 `;
+
+export const Container = styled.div`
+  cursor: pointer;
+  & > h1 {
+    ${({ theme }) => theme.text.t2}
+  }
+`;
+
+export const Underline = styled.div`
+  height: 3px;
+  width: 98%;
+  background-color: var(--crimson);
+  bottom: 12%;
+  position: relative;
+
+  display: ${({ shownStatus }) => (shownStatus ? "block" : "none")};
+`;

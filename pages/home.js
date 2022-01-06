@@ -1,11 +1,11 @@
-import { Home } from "components/templates";
+import { HomePage } from "components/templates";
 
-const HomePage = () => {
+const Home = () => {
   return (
     <>
-      <Home />
+      <HomePage />
     </>
   );
 };
 
-export default HomePage;
+export default Home;

@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
 `;
 
 export const AboutWrapper = styled.div`
-  grid-column: 1 / span 8;
+  grid-column: 2 / span 8;
   height: 100%;
   margin-top: 3rem;
 

@@ -21,7 +21,7 @@ const AnimateTextIn = ({ title, color }) => {
       transition: {
         delay: 1,
         staggerChildren: 0.032,
-        duration: 2,
+        duration: 0.35,
       },
     },
   };

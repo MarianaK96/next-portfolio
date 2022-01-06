@@ -1,30 +1,32 @@
 import Link from "next/link";
-import { Wrapper, ArrowWrapper, Animate } from "./TakeALook.styles.js";
+import {
+  Wrapper,
+  ArrowWrapper,
+  Animate,
+  TextWrapper,
+} from "./TakeALook.styles.js";
 import { Arrow } from "common_components/atoms";
 import { AnimateTextIn } from "animations";
 
+import { motion } from "framer-motion";
+
 const TakeALook = () => {
-  const variant = {
-    visible: { x: 0, opacity: 1 },
-    hidden: { x: -200, opacity: 0 },
-    transition: {
-      ease: "easeInOut",
-      delay: 3,
-      duration: 3,
-    },
-  };
+  return (
+    <Wrapper>
+
   return (
     <Wrapper>
       <Link href="/projects">
-        <AnimateTextIn title={`Take a look`} color={`var(--grey)`} />
+        <TextWrapper>
+          <AnimateTextIn title={`Take a look`} color={`var(--grey)`} />
+        </TextWrapper>
       </Link>
 
       <ArrowWrapper href="/projects">
         <Animate
-          initial="hidden"
-          animate="visible"
-          variants={variant}
-          transition="transition"
+          initial={{ x: -200 }}
+          animate={{ x: 0 }}
+          transition={{ delay: 1, ease: "easeInOut" }}
         >
           <Arrow />
         </Animate>

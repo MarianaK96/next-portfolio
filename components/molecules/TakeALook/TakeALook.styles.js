@@ -4,7 +4,21 @@ import { motion } from "framer-motion";
 
 export const Wrapper = styled(motion.div)`
   width: 100%;
-  
+
+  & > div {
+    margin-left: auto;
+  }
+
+  & > svg {
+    transform: scale(0.7);
+
+    ${({ theme }) => theme.mq.atTablet`
+    transform: scale(1);
+    `}
+  }
+`;
+
+export const TextWrapper = styled.div`
   & > h1 {
     ${({ theme }) => theme.text.t2}
     color: var(--grey);
@@ -15,18 +29,6 @@ export const Wrapper = styled(motion.div)`
       cursor: pointer;
       color: var(--crimson);
     }
-
-  & > div {
-      margin-left: auto;
-    }
-
-  & > svg {
-    transform: scale(0.7);
-
-    ${({ theme }) => theme.mq.atTablet`
-    transform: scale(1);
-    `}
-  }
 `;
 
 export const ArrowWrapper = styled(Link)`

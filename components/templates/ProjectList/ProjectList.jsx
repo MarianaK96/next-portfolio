@@ -1,13 +1,10 @@
 import { Header } from "common_components/organisms";
 import { GridLayout, ProjectTitle } from "common_components/atoms";
-import { ProjectTitles } from "components/atoms";
 import { Wrapper, TitleWrapper, Container } from "./ProjectList.styles";
-import { ProjectListAnims } from "animations";
 import { AnimateTextIn } from "animations";
 import Link from "next/link";
 
 const ProjectList = ({ projects }) => {
-  const { projectList, projectTitle } = ProjectListAnims;
   return (
     <>
       <Header />

@@ -32,9 +32,6 @@ export const getStaticProps = async (context) => {
 };
 
 const Works = ({ project }) => {
-  useEffect(() => {
-    console.log(project);
-  });
   return (
     <>
       <Project project={project} />

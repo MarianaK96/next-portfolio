@@ -38,9 +38,9 @@ const AboutText = () => {
           </Link>
           <Underline
             shownStatus={shownStatus}
-            initial={{ y: -200 }}
-            animate={{ y: 0 }}
-            transition={{ delay: 3, ease: "easeIn" }}
+            // initial={{ y: 200 }}
+            // animate={{ y: 0 }}
+            // transition={{ delay: 2, ease: "easeInOut" }}
           />
         </Container>
 

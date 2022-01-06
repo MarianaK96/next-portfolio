@@ -22,7 +22,9 @@ const Footer = () => {
             <Github onClick={() => openLink("https://github.com/MarianaK96")} />
             <LinkedIn
               onClick={() =>
-                "https://www.linkedin.com/in/mariana-koudela-437b09196/"
+                openLink(
+                  "https://www.linkedin.com/in/mariana-koudela-437b09196/"
+                )
               }
             />
           </IconsWrapper>

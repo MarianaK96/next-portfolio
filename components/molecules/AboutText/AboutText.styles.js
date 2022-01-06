@@ -50,5 +50,6 @@ export const Underline = styled.div`
   bottom: 12%;
   position: relative;
 
-  display: ${({ shownStatus }) => (shownStatus ? "block" : "none")};
+  opacity: ${({ shownStatus }) => (shownStatus ? "1" : "0")};
+  transition: opacity 4s ease;
 `;

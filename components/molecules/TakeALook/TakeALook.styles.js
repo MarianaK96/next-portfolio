@@ -34,11 +34,3 @@ export const ArrowWrapper = styled(Link)`
 `;
 
 export const Animate = styled(motion.div)``;
-
-// export const Letter = styled(motion.p)`
-//   display: inline-block;
-//   ${({ theme }) => theme.text.t2}
-//   color: var(--grey);
-//   margin-left: auto;
-//   margin-bottom: 1vh;
-// `;

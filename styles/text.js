@@ -6,18 +6,12 @@ const { Poppins, yesevaOne } = fontFamilyNames;
 
 const t1Base = {
   fontSize: "3.5rem",
-  // lineHeight: "2.25rem",
-  // letterSpacing: "0.025rem",
   mq: {
     atTablet: {
       fontSize: "4rem",
-      // lineHeight: "3rem",
-      // letterSpacing: "0.025rem",
     },
     atDesktop: {
       fontSize: "5rem",
-      // lineHeight: "4rem",
-      // letterSpacing: "0.03125rem",
     },
   },
 };
@@ -104,7 +98,6 @@ const standardTextStyles = {
   },
 };
 
-// Add any custom text styling here.
 const customTextStyles = {};
 
 const textStyles = {

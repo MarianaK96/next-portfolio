@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Wrapper, ArrowWrapper, Animate } from "./TakeALook.styles.js";
 import { Arrow } from "common_components/atoms";
@@ -14,16 +13,8 @@ const TakeALook = () => {
       duration: 3,
     },
   };
-  const [test, setTest] = useState("hidden");
   return (
     <Wrapper>
-      <button
-        onClick={() => {
-          test === "hidden" ? setTest("visible") : setTest("hidden");
-        }}
-      >
-        set test
-      </button>
       <Link href="/projects">
         <AnimateTextIn title={`Take a look`} color={`var(--grey)`} />
       </Link>
@@ -31,7 +22,7 @@ const TakeALook = () => {
       <ArrowWrapper href="/projects">
         <Animate
           initial="hidden"
-          animate={test}
+          animate="visible"
           variants={variant}
           transition="transition"
         >

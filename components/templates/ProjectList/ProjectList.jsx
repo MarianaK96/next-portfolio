@@ -1,8 +1,6 @@
 import { Header } from "common_components/organisms";
-import { GridLayout } from "common_components/atoms";
 import { Wrapper, Container } from "./ProjectList.styles";
 import { GridLayout, ProjectTitle } from "common_components/atoms";
-import { Wrapper, Container } from "./ProjectList.styles";
 import { AnimateTextIn } from "animations";
 import Link from "next/link";
 

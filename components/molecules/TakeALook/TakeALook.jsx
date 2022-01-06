@@ -13,9 +13,6 @@ import { motion } from "framer-motion";
 const TakeALook = () => {
   return (
     <Wrapper>
-
-  return (
-    <Wrapper>
       <Link href="/projects">
         <TextWrapper>
           <AnimateTextIn title={`Take a look`} color={`var(--grey)`} />

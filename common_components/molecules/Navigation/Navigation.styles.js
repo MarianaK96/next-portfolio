@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const Styles = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: auto;
   margin-right: 1.5rem;
 
@@ -11,6 +11,10 @@ export const Styles = styled.div`
   cursor: pointer;
   font-weight: 500;
   color: var(--offBlack);
+
+  ${({ theme }) => theme.mq.atTablet`
+  justify-content: space-evenly;
+  `}
 `;
 
 export const UnderlineWrapper = styled.div`

@@ -2,7 +2,7 @@ import { css } from "styled-components";
 import mediaQueries from "./mediaQueries";
 import { fontFamilyNames } from "./font";
 
-const { Poppins, yesevaOne } = fontFamilyNames;
+const { Poppins, PoppinsMedium, yesevaOne } = fontFamilyNames;
 
 const t1Base = {
   fontSize: "3.5rem",
@@ -89,7 +89,7 @@ const standardTextStyles = {
   },
   bm: {
     ...bmBase,
-    fontFamily: Poppins,
+    fontFamily: PoppinsMedium,
   },
 
   bxs: {

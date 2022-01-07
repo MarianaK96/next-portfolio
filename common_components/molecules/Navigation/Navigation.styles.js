@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const Styles = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: auto;
   margin-right: 1.5rem;
 

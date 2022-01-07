@@ -15,6 +15,7 @@ export const Wrapper = styled(motion.div)`
 
 export const Container = styled.div`
   display: flex;
+  justify-content: space-between;
 `;
 
 export const LinkWrapper = styled.a`

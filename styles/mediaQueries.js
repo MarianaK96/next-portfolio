@@ -30,3 +30,9 @@ const mediaQueries = Object.keys(mediaQueryBreakPoints).reduce(
 );
 
 export default mediaQueries;
+
+//reduces the object into a single value of a string media query
+//for each item, take an em size
+//accumulator?
+//label is the keys, so at each of them create a new string
+//what is the css imported from styled components?

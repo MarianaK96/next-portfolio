@@ -31,6 +31,10 @@ export const TextWrapper = styled.div`
     }
 `;
 
+export const Container = styled.div`
+  overflow: hidden;
+`;
+
 export const ArrowWrapper = styled(Link)`
   cursor: pointer;
 `;

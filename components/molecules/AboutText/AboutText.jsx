@@ -36,12 +36,7 @@ const AboutText = () => {
               <AnimateTextIn title={lineTwo} color={`var(--crimson)`} />
             </Container>
           </Link>
-          <Underline
-            shownStatus={shownStatus}
-            // initial={{ y: 200 }}
-            // animate={{ y: 0 }}
-            // transition={{ delay: 2, ease: "easeInOut" }}
-          />
+          <Underline shownStatus={shownStatus} />
         </Container>
 
         <AnimateTextIn title={lineThree} color={`var(--grey)`} />

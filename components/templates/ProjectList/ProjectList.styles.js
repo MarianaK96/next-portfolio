@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const Wrapper = styled(motion.div)`
   grid-column: 2 / 9;
-  grid-row: 2 / -1;
+  grid-row: 3 / -1;
   overflow: hidden;
 
   ${({ theme }) => theme.mq.atDesktop`
@@ -13,8 +13,6 @@ export const Wrapper = styled(motion.div)`
 `;
 
 export const Container = styled.div`
-  margin-right: 5rem;
-
   & > h1 {
     ${({ theme }) => theme.text.t2}
     color: var(--grey);
@@ -25,4 +23,8 @@ export const Container = styled.div`
       color: var(--crimson);
     }
   }
+
+  ${({ theme }) => theme.mq.atTablet`
+  margin-right: 5rem;
+  `}
 `;

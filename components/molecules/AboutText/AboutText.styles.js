@@ -51,5 +51,5 @@ export const Underline = styled.div`
   position: relative;
 
   opacity: ${({ shownStatus }) => (shownStatus ? "1" : "0")};
-  transition: opacity 4s ease;
+  transition: opacity 0.6s ease;
 `;

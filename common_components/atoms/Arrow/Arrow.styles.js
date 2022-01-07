@@ -6,8 +6,8 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
-  width: 50px;
+  height: 65px;
+  width: 65px;
   padding: 10px;
 
   border-radius: 50%;
@@ -16,10 +16,4 @@ export const Wrapper = styled.div`
   &:hover {
     background-color: var(--greyOpaque);
   }
-
-  transform: scale(1);
-
-  ${({ theme }) => theme.mq.atTablet`
-    transform: scale(1.5);
-    `}
 `;

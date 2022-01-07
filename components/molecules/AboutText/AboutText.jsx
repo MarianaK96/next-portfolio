@@ -1,12 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {
-  Wrapper,
-  Sentence,
-  SentenceContainer,
-  Styles,
-  Underline,
-  Container,
-} from "./AboutText.styles.js";
+import { Styles, Underline, Container } from "./AboutText.styles.js";
 import { motion } from "framer-motion";
 import { AnimateTextIn } from "animations";
 import Link from "next/link";

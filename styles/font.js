@@ -1,3 +1,10 @@
+// import "/fonts/Poppins/poppinsregular.woff";
+// import "/fonts/Poppins/poppinsregular.woff2";
+// import "/fonts/Poppins/Poppins-Medium.woff";
+// import "/fonts/Poppins/Poppins-Medium.woff2";
+// import "/fonts/YesevaOne/yesevaoneregular.woff";
+// import "/fonts/YesevaOne/yesevaoneregular.woff2";
+
 export const fontFamilyNames = {
   Poppins: '"Poppins", sans-serif',
   PoppinsMedium: '"Poppins", sans-serif',

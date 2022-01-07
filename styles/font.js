@@ -1,18 +1,29 @@
 export const fontFamilyNames = {
   Poppins: '"Poppins", sans-serif',
-  yesevaOne: '"Yeseva One"',
+  PoppinsMedium: '"Poppins", sans-serif',
+  yesevaOne: '"Yeseva One", serif',
 };
 
-const { Poppins, yesevaOne } = fontFamilyNames;
+const { Poppins, PoppinsMedium, yesevaOne } = fontFamilyNames;
 
 const fontFamilies = `
   @font-face {
     font-family: ${Poppins};
-    src: url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+    src: url('/fonts/Poppins/Poppins-Regular.woff')format("woff");
+    url('/fonts/Poppins/Poppins-Regular.woff2')format("woff2");
+    font-weight: normal;
+  },
+  @font-face {
+    font-family: ${PoppinsMedium};
+    src: url('/fonts/Poppins/Poppins-Medium.woff')format("woff");
+    url('/fonts/Poppins/Poppins-Medium.woff2')format("woff2");
+    font-weight: 500;
   }
   @font-face {
     font-family: ${yesevaOne};
-    src: url(https://fonts.googleapis.com/css?family=Fuzzy+Bubbles:regular,700);
+    src: url('/fonts/YesevaOne/YesevaOne-Regular.woff')format("woff");
+    url('/fonts/YesevaOne/YesevaOne-Regular.woff2')format("woff2");
+    font-weight: normal;
   }
 `;
 

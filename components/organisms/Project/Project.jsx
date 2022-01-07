@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-=======
-import { useState, useEffect } from "react";
 import Link from "next/link";
->>>>>>> Stashed changes
 import {
   GridLayout,
   ProjectTitle,

@@ -48,5 +48,3 @@ const AboutText = () => {
 };
 
 export default AboutText;
-
-//underline to appear when mouse is moved on page? or after a certain number of minutes

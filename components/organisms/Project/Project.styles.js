@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export const Wrapper = styled(motion.div)`
   grid-column: 2 / span 6;
-  grid-row: 2 / -1;
+  grid-row: 3 / -1;
 
   display: inline-block;
 

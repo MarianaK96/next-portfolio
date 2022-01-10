@@ -1,4 +1,4 @@
-import { Header } from "common_components/organisms";
+import { Footer, Header } from "common_components/organisms";
 import { Wrapper, Container } from "./ProjectList.styles";
 import { GridLayout, ProjectTitle } from "common_components/atoms";
 import { AnimateTextIn } from "animations";
@@ -25,6 +25,7 @@ const ProjectList = ({ projects }) => {
             })}
         </Wrapper>
       </GridLayout>
+      <Footer />
     </>
   );
 };

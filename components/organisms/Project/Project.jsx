@@ -6,7 +6,7 @@ import {
   ProjectSkills,
   Arrow,
 } from "common_components/atoms";
-import { Header } from "common_components/organisms";
+import { Header, Footer } from "common_components/organisms";
 import {
   Wrapper,
   ArrowWrapper,
@@ -45,6 +45,7 @@ const Project = ({ project }) => {
           </ArrowWrapper>
         </Wrapper>
       </GridLayout>
+      <Footer />
     </>
   );
 };

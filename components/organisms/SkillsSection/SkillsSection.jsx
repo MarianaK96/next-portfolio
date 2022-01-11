@@ -25,8 +25,6 @@ const AboutSection = () => {
       <Header />
       <GridLayout>
         <Wrapper>
-          {/* <ProjectTitle title={`Core skills`} />
-          <ProjectInfo info={`hello`} /> */}
           <Container>
             <CoreSkills>
               <SkillsTitle title={`Core skills`} />
@@ -34,7 +32,7 @@ const AboutSection = () => {
               <SkillList>
                 <Skill>Javascript</Skill>
                 <Skill>React</Skill>
-                <Skill>User research</Skill>
+                <Skill>Next Js.</Skill>
               </SkillList>
             </CoreSkills>
             <FamiliarSkills>
@@ -42,8 +40,8 @@ const AboutSection = () => {
               <Underline />
               <SkillList>
                 <Skill>Contentful</Skill>
-                <Skill>UX</Skill>
                 <Skill>Vue.js</Skill>
+                <Skill>User research</Skill>
               </SkillList>
             </FamiliarSkills>
           </Container>

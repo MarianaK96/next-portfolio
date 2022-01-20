@@ -5,30 +5,18 @@ import { fontFamilyNames } from "./font";
 const { poppins, poppinsMedium, yesevaOne } = fontFamilyNames;
 
 const t1Base = {
-  fontSize: "3.5rem",
-  mq: {
-    atTablet: {
-      fontSize: "4rem",
-    },
-    atDesktop: {
-      fontSize: "5rem",
-    },
-  },
-};
-
-const t2 = {
   fontSize: "1.8rem",
   lineHeight: "2.7rem",
   letterSpacing: "0.03rem",
 
   mq: {
     atTablet: {
-      fontSize: "2.5rem",
-      lineHeight: "3.8rem",
+      fontSize: "3rem",
+      lineHeight: "4.2rem",
     },
     atDesktop: {
-      fontSize: "2.9rem",
-      lineHeight: "5rem",
+      fontSize: "3.5rem",
+      lineHeight: "6rem",
       letterSpacing: "0.03125rem",
     },
   },
@@ -77,10 +65,6 @@ const bxsBase = {
 const standardTextStyles = {
   t1: {
     ...t1Base,
-    fontFamily: yesevaOne,
-  },
-  t2: {
-    ...t2,
     fontFamily: yesevaOne,
   },
   t3: {

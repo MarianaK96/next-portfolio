@@ -20,7 +20,7 @@ export const Wrapper = styled(motion.div)`
 
 export const TextWrapper = styled.div`
   & > h1 {
-    ${({ theme }) => theme.text.t2}
+    ${({ theme }) => theme.text.t1}
     color: var(--grey);
     margin-left: auto;
     margin-bottom: 1vh;

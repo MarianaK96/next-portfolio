@@ -7,14 +7,14 @@ export const Styles = styled.div`
   margin: 0;
 
   & > h1 {
-    ${({ theme }) => theme.text.t2}
+    ${({ theme }) => theme.text.t1}
   }
 `;
 
 export const Container = styled.div`
   cursor: pointer;
   & > h1 {
-    ${({ theme }) => theme.text.t2};
+    ${({ theme }) => theme.text.t1};
     color: var(--crimson);
   }
 `;

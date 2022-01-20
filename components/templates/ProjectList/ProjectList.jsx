@@ -3,8 +3,11 @@ import { Wrapper, Container } from "./ProjectList.styles";
 import { GridLayout, ProjectTitle } from "common_components/atoms";
 import { AnimateTextIn } from "animations";
 import Link from "next/link";
+import { MenuItem } from "components/atoms";
+import useMousePosition from "hooks/useMousePosition";
 
 const ProjectList = ({ projects }) => {
+  const { x, y } = useMousePosition();
   return (
     <>
       <Header />
@@ -13,14 +16,16 @@ const ProjectList = ({ projects }) => {
           {projects &&
             projects.map((project) => {
               return (
-                <Link href={"/" + project.slug}>
-                  <Container key={project.slug}>
-                    <AnimateTextIn
-                      title={project.projectTitle}
-                      color={`var(--grey)`}
-                    />
-                  </Container>
-                </Link>
+                <MenuItem
+                  href={"/" + project.slug}
+                  key={project.slug}
+                  title={project.projectTitle}
+                  x={x}
+                  y={y}
+                  imageWidth={660}
+                  imageHeight={400}
+                  image={project.projectImage.url}
+                />
               );
             })}
         </Wrapper>

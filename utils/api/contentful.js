@@ -41,6 +41,10 @@ export const getAllProjects = async () => {
         projectInfo, 
         projectSkills,
         projectLink,
+        projectImage {
+          url
+        }
+
       }
   }
 }`;

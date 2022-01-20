@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export const Container = styled.div`
   & > h1 {
-    ${({ theme }) => theme.text.t2}
+    ${({ theme }) => theme.text.t1}
     color: var(--grey);
     cursor: pointer;
     margin: 0;

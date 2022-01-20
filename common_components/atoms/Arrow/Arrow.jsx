@@ -1,12 +1,12 @@
 import * as React from "react";
 import { Wrapper } from "./Arrow.styles";
 
-export const ArrowFront = ({ rotation }) => {
+export const Arrow = ({ rotation }) => {
   return (
     <Wrapper>
       <svg
-        width={44}
-        height={16}
+        width={70}
+        height={20}
         viewBox="0 0 44 16"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -24,4 +24,4 @@ export const ArrowFront = ({ rotation }) => {
   );
 };
 
-export default ArrowFront;
+export default Arrow;

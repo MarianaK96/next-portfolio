@@ -58,9 +58,6 @@ export const ImageWrapper = styled(motion.div)`
   overflow: hidden;
   width: ${({ imageWidth }) => `${imageWidth}px`};
   height: ${({ imageHeight }) => `${imageHeight}px`};
-
-  & > img {
-    width: ${({ imageWidth }) => `${imageWidth}px`};
-    height: ${({ imageHeight }) => `${imageHeight}px`};
-  }
+  background-image: url(${({ image }) => image});
+  background-size: cover;
 `;

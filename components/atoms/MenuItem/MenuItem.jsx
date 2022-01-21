@@ -70,9 +70,11 @@ const MenuItem = ({
         }}
         transition={{ ease: [0.5, 1, 0.89, 1], duration: 0.2 }}
       >
-        <ImageWrapper imageWidth={imageWidth} imageHeight={imageHeight}>
-          <img src={image} alt="bord" />
-        </ImageWrapper>
+        <ImageWrapper
+          imageWidth={imageWidth}
+          imageHeight={imageHeight}
+          image={image}
+        ></ImageWrapper>
       </ImageOuterWrapper>
     </>
   );

@@ -22,8 +22,8 @@ const ProjectList = ({ projects }) => {
                   title={project.projectTitle}
                   x={x}
                   y={y}
-                  imageWidth={660}
-                  imageHeight={400}
+                  imageWidth={640}
+                  imageHeight={360}
                   image={project.projectImage.url}
                 />
               );

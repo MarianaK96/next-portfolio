@@ -29,8 +29,9 @@ export const AboutWrapper = styled.div`
 
   ${({ theme }) => theme.mq.atDesktop`
     grid-column: 2 / 13;
-    margin-top: 10rem;
+    margin-top: 13rem;
     align-items: flex-start;
+    justify-content: space-between;
 `}
 `;
 

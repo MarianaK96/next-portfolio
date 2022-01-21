@@ -1,3 +1,3 @@
-import ArrowFront from "./Arrow";
+import Arrow from "./Arrow";
 
-export default ArrowFront;
+export default Arrow;

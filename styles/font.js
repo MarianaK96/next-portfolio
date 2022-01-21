@@ -1,31 +1,16 @@
-// import "/fonts/Poppins/poppinsregular.woff";
-// import "/fonts/Poppins/poppinsregular.woff2";
-// import "/fonts/Poppins/Poppins-Medium.woff";
-// import "/fonts/Poppins/Poppins-Medium.woff2";
-// import "/fonts/YesevaOne/yesevaoneregular.woff";
-// import "/fonts/YesevaOne/yesevaoneregular.woff2";
-
 export const fontFamilyNames = {
-  Poppins: '"Poppins", sans-serif',
-  PoppinsMedium: '"Poppins", sans-serif',
+  poppins: '"Poppins", sans-serif',
+  poppinsMedium: '"Poppins Semibold", sans-serif',
   yesevaOne: '"Yeseva One", serif',
 };
 
-const { Poppins, PoppinsMedium, yesevaOne } = fontFamilyNames;
+const { poppins, poppinsMedium, yesevaOne } = fontFamilyNames;
 
 const fontFamilies = `
-  @font-face {
-    font-family: ${Poppins};
-    src: url('/fonts/Poppins/poppinsregular.woff') format("woff");
-    url('/fonts/Poppins/poppinsregular.woff2') format("woff2");
-    font-weight: normal;
-  },
-  @font-face {
-    font-family: ${PoppinsMedium};
-    src: url('/fonts/Poppins/Poppins-Medium.woff') format("woff");
-    url('/fonts/Poppins/Poppins-Medium.woff2') format("woff2");
-    font-weight: 500;
-  }
+@font-face {
+  font-family: ${poppins};
+  src: url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
   @font-face {
     font-family: ${yesevaOne};
     src: url('/fonts/YesevaOne/yesevaoneregular.woff') format("woff");
@@ -35,3 +20,16 @@ const fontFamilies = `
 `;
 
 export default fontFamilies;
+
+// @font-face {
+//   @font-face {
+//     font-family: ${poppins};
+//     src: url("/fonts/Poppins/poppinsregular.woff2") format("woff2"),
+//     url("/fonts/Poppins/poppinsregular.woff") format("woff");
+//   },
+//   @font-face {
+//     font-family: ${poppinsMedium};
+//     src: url("/fonts/Poppins/poppinssemibold.woff2") format("woff2"),
+//     url("/fonts/Poppins/poppinssemibold.woff") format("woff");
+//     font-weight: 500;
+//   },

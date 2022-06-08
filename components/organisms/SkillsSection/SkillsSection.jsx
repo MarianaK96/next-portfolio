@@ -31,6 +31,7 @@ const AboutSection = () => {
               <SkillList>
                 <Skill>Javascript</Skill>
                 <Skill>React</Skill>
+                <Skill>Typescript</Skill>
                 <Skill>Next Js.</Skill>
               </SkillList>
             </CoreSkills>
@@ -38,8 +39,9 @@ const AboutSection = () => {
               <SkillsTitle title={`Familiar Skills`} />
               <Underline />
               <SkillList>
-                <Skill>Contentful</Skill>
                 <Skill>Vue.js</Skill>
+                <Skill>C#</Skill>
+                <Skill>Contentful</Skill>
                 <Skill>User research</Skill>
               </SkillList>
             </FamiliarSkills>

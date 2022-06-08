@@ -1,3 +1,4 @@
+import React from "react";
 import { Footer, Header } from "common_components/organisms";
 import { Wrapper, Container } from "./ProjectList.styles";
 import { GridLayout, ProjectTitle } from "common_components/atoms";
@@ -16,16 +17,17 @@ const ProjectList = ({ projects }) => {
           {projects &&
             projects.map((project) => {
               return (
-                <MenuItem
-                  href={"/" + project.slug}
-                  key={project.slug}
-                  title={project.projectTitle}
-                  x={x}
-                  y={y}
-                  imageWidth={450}
-                  imageHeight={250}
-                  image={project.projectImage.url}
-                />
+                <React.Fragment key={project.slug}>
+                  <MenuItem
+                    href={"/" + project.slug}
+                    title={project.projectTitle}
+                    x={x}
+                    y={y}
+                    imageWidth={530}
+                    imageHeight={310}
+                    image={project.projectImage.url}
+                  />
+                </React.Fragment>
               );
             })}
         </Wrapper>

@@ -5,6 +5,6 @@ export const Title = styled.h1`
   width: 100%;
   margin: 0;
 
-  ${({ theme }) => theme.text.t2}
+  ${({ theme }) => theme.text.t1}
   color: var(--navy);
 `;

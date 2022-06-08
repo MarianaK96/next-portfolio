@@ -24,7 +24,10 @@ const Project = ({ project }) => {
             return (
               <>
                 <Container>
-                  <ProjectTitle title={project.projectTitle} />
+                  <ProjectTitle
+                    title={project.projectTitle}
+                    key={project.projectTitle}
+                  />
                   <LinkWrapper
                     href={project.projectLink}
                     target={"blank"}

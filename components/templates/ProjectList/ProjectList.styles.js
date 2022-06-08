@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 export const Wrapper = styled(motion.div)`
-  grid-column: 2 / 9;
+  grid-column: 2 / 13;
   grid-row: 3 / -1;
   overflow: hidden;
 

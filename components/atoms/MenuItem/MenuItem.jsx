@@ -19,9 +19,6 @@ const MenuItem = ({
   imageHeight,
   image,
 }) => {
-  const imageLink =
-    "https://images.unsplash.com/photo-1642622943422-d9ab98b4427e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80";
-
   let menuItemRef = useRef();
 
   const [hoverState, setHoverState] = useState(false);
@@ -61,11 +58,9 @@ const MenuItem = ({
           scaleX: hoverState ? 1 : 0.75,
           width: hoverState ? imageWidth * 1.6 : imageWidth,
           x: x - listPosition.left,
-          y:
-            y -
-            listPosition.top -
-            imageHeight / 2 +
-            (hoverState ? 0 : imageHeight * 0.75),
+          y: y - listPosition.top - imageHeight / 2,
+          //+
+          // (hoverState ? 0 : imageHeight * 0.75),
           rotate: 5,
         }}
         transition={{ ease: [0.5, 1, 0.89, 1], duration: 0.2 }}

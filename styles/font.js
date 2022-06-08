@@ -20,16 +20,3 @@ const fontFamilies = `
 `;
 
 export default fontFamilies;
-
-// @font-face {
-//   @font-face {
-//     font-family: ${poppins};
-//     src: url("/fonts/Poppins/poppinsregular.woff2") format("woff2"),
-//     url("/fonts/Poppins/poppinsregular.woff") format("woff");
-//   },
-//   @font-face {
-//     font-family: ${poppinsMedium};
-//     src: url("/fonts/Poppins/poppinssemibold.woff2") format("woff2"),
-//     url("/fonts/Poppins/poppinssemibold.woff") format("woff");
-//     font-weight: 500;
-//   },

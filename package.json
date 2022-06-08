@@ -17,7 +17,6 @@
     "react-is": "^18.1.0",
     "styled-components": "^5.3.3",
     "throttle-debounce": "^3.0.1",
-    "uuid": "^8.3.2",
     "uuidv4": "^6.2.13"
   },
   "devDependencies": {

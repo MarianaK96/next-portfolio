@@ -2,7 +2,6 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { TitleStyles, Letter, Word } from "./AnimateTextIn.styles";
 import useIntersectionObserver from "hooks/useIntersectionObserver";
-import { v4 as uuidv4 } from "uuid";
 
 const AnimateTextIn = ({ title, color }) => {
   const [test, setTest] = useState("hidden");

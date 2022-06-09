@@ -58,9 +58,11 @@ const MenuItem = ({
           scaleX: hoverState ? 1 : 0.75,
           width: hoverState ? imageWidth * 1.6 : imageWidth,
           x: x - listPosition.left,
-          y: y - listPosition.top - imageHeight / 2,
-          //+
-          // (hoverState ? 0 : imageHeight * 0.75),
+          y:
+            y -
+            listPosition.top -
+            imageHeight / 2 +
+            (hoverState ? 0 : imageHeight * 0.75),
           rotate: 5,
         }}
         transition={{ ease: [0.5, 1, 0.89, 1], duration: 0.2 }}

@@ -9,7 +9,7 @@ import {
   SkillList,
   ArrowWrapper,
 } from "./SkillsSection.styles.js";
-import { Header } from "common_components/organisms";
+import { Footer, Header } from "common_components/organisms";
 import {
   GridLayout,
   ProjectTitle,
@@ -53,6 +53,7 @@ const AboutSection = () => {
           </ArrowWrapper>
         </Wrapper>
       </GridLayout>
+      <Footer />
     </>
   );
 };

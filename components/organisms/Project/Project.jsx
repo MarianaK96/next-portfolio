@@ -13,6 +13,7 @@ import {
   LinkWrapper,
   Container,
 } from "./Project.styles";
+import React from "react";
 
 const Project = ({ project }) => {
   return (
@@ -22,7 +23,7 @@ const Project = ({ project }) => {
         <Wrapper>
           {project.map((project) => {
             return (
-              <>
+              <React.Fragment key={project.projectTitle}>
                 <Container>
                   <ProjectTitle
                     title={project.projectTitle}
@@ -38,7 +39,7 @@ const Project = ({ project }) => {
                 </Container>
                 <ProjectInfo info={project.projectInfo} />
                 <ProjectSkills skills={project.projectSkills} />
-              </>
+              </React.Fragment>
             );
           })}
           <ArrowWrapper href="/projects">

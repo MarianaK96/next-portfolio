@@ -8,7 +8,7 @@ export const Wrapper = styled(motion.div)`
   overflow: hidden;
 
   ${({ theme }) => theme.mq.atDesktop`
-  grid-row: 3 / -1;
+  grid-row: 3 / -3;
   `}
 `;
 

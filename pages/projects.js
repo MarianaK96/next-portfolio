@@ -12,9 +12,6 @@ export const getStaticProps = async () => {
 };
 
 const Projects = ({ projects }) => {
-  useEffect(() => {
-    console.log(projects);
-  });
   return (
     <>
       <ProjectList projects={projects} />

@@ -6,10 +6,14 @@ const Navigation = () => {
     <>
       <Styles>
         <UnderlineWrapper>
-          <Link href="/">about</Link>
+          <Link href="/">
+            <a>about</a>
+          </Link>
         </UnderlineWrapper>
         <UnderlineWrapper>
-          <Link href="/projects">work</Link>
+          <Link href="/projects">
+            <a>work</a>
+          </Link>
         </UnderlineWrapper>
       </Styles>
     </>

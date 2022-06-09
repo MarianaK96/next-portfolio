@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
 
   ${({ theme }) => theme.mq.atDesktop`
   grid-column: 2 / 12;
-  grid-row: 3 / -1;
+  grid-row: 3 / -2;
   `}
 `;
 

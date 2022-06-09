@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
+  position: fixed;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   width: 100%;

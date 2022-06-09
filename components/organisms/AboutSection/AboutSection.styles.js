@@ -29,7 +29,7 @@ export const AboutWrapper = styled.div`
 
   ${({ theme }) => theme.mq.atDesktop`
     grid-column: 2 / 13;
-    margin-top: 13rem;
+    margin-top: 11rem;
     align-items: flex-start;
     justify-content: space-between;
 `}
@@ -39,7 +39,7 @@ export const LookWrapper = styled.div`
   grid-column: 2 / span 4;
 
   ${({ theme }) => theme.mq.atTablet`
-    margin-top: 5rem;
-    margin-bottom: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
 `};
 `;

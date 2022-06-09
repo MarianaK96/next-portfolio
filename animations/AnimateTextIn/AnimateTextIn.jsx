@@ -53,7 +53,7 @@ const AnimateTextIn = ({ title, color }) => {
           <Word>
             {word.split("").map((char, index) => {
               return (
-                <Letter key={char} variants={letter}>
+                <Letter key={index} variants={letter}>
                   {char}
                 </Letter>
               );

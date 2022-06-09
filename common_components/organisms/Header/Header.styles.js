@@ -14,7 +14,7 @@ export const Wrapper = styled.div`
 `;
 
 export const LinkStyle = styled.a`
-  grid-column: 2 / span 3;
+  grid-column: 2 / span 2;
   margin: 0;
   cursor: pointer;
   ${({ theme }) => theme.text.bm};

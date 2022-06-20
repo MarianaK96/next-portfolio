@@ -29,13 +29,15 @@ const Project = ({ project }) => {
                     title={project.projectTitle}
                     key={project.projectTitle}
                   />
-                  <LinkWrapper
-                    href={project.projectLink}
-                    target={"blank"}
-                    rel="nofollow"
-                  >
-                    Visit site
-                  </LinkWrapper>
+                  {project.projectLink !== null && (
+                    <LinkWrapper
+                      href={project.projectLink}
+                      target={"blank"}
+                      rel="nofollow"
+                    >
+                      Visit site
+                    </LinkWrapper>
+                  )}
                 </Container>
                 <ProjectInfo info={project.projectInfo} />
                 <ProjectSkills skills={project.projectSkills} />
